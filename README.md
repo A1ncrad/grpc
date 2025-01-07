@@ -1,0 +1,3 @@
+- auth_data - [Hypurr](https://app.hypurr.fun) localStorage.telegramAuth.hash
+- wallet_id - можно чекнуть через getWallet()
+- launch_id - https://app.hypurr.fun/launch/8199 - 8199 это launch_Id
