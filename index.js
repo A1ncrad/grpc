@@ -83,6 +83,7 @@ function sell(telegramStelSsid, launchId, walletId, amount) {
 //getWallet("0xBf3AB243d495AF193938076E2A193F320cFd26D2"); 
 
 const auth = {
+
 }
 
 buy(auth, 12101, 90245, 1000.0);
