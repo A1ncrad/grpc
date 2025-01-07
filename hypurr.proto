@@ -7,10 +7,10 @@ service Telegram {
 }
 
 message HyperliquidLaunchTradeRequest {
-    string auth_data = 1;
+    map<string, string> auth_data = 1;
     int64 launch_id = 2;
     int64 wallet_id = 3;
-    HyperliquidTradeDirection direction = 4;
+    HyperliquidLaunchTradeDirection direction = 4;
     double amount = 5;
 }
 
@@ -21,9 +21,9 @@ message HyperliquidLaunchTradeResponse {
     bool success = 4;
 }
 
-enum HyperliquidTradeDirection {
+enum HyperliquidLaunchTradeDirection {
+    BUY = 0;
     SELL = 1;
-    BUY = 2;
 }
 
 service Static {
@@ -170,10 +170,10 @@ message HyperliquidLaunch {
 }
 
 enum HyperliquidLaunchPoolType {
-    Quadratic = 1;
-    QuadraticV2 = 2;
-    Linear = 3;
-    Fixed = 4;
+    Quadratic = 0;
+    QuadraticV2 = 1;
+    Linear = 2;
+    Fixed = 3;
 }
 
 message HyperliquidLaunchFill {
